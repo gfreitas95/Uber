@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0DB18324E3629700BD00A2 /* AddressClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0DB18224E3629700BD00A2 /* AddressClass.swift */; };
+		EC0DB18524E362A400BD00A2 /* Addresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0DB18424E362A400BD00A2 /* Addresses.swift */; };
+		ECE03F0B24E36D6B00C9595D /* AddressesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE03F0A24E36D6B00C9595D /* AddressesViewController.swift */; };
 		ECFBA14D24D4DD77002019CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBA14C24D4DD77002019CF /* AppDelegate.swift */; };
 		ECFBA14F24D4DD77002019CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBA14E24D4DD77002019CF /* SceneDelegate.swift */; };
-		ECFBA15124D4DD77002019CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBA15024D4DD77002019CF /* ViewController.swift */; };
+		ECFBA15124D4DD77002019CF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFBA15024D4DD77002019CF /* MapViewController.swift */; };
 		ECFBA15424D4DD77002019CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA15224D4DD77002019CF /* Main.storyboard */; };
 		ECFBA15624D4DD79002019CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA15524D4DD79002019CF /* Assets.xcassets */; };
 		ECFBA15924D4DD79002019CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECFBA15724D4DD79002019CF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC0DB18224E3629700BD00A2 /* AddressClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressClass.swift; sourceTree = "<group>"; };
+		EC0DB18424E362A400BD00A2 /* Addresses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addresses.swift; sourceTree = "<group>"; };
+		ECE03F0A24E36D6B00C9595D /* AddressesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesViewController.swift; sourceTree = "<group>"; };
 		ECFBA14924D4DD77002019CF /* Uber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFBA14C24D4DD77002019CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECFBA14E24D4DD77002019CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECFBA15024D4DD77002019CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECFBA15024D4DD77002019CF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		ECFBA15324D4DD77002019CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECFBA15524D4DD79002019CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECFBA15824D4DD79002019CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC0DB17E24E3624900BD00A2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECFBA15024D4DD77002019CF /* MapViewController.swift */,
+				ECE03F0A24E36D6B00C9595D /* AddressesViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC0DB17F24E3625400BD00A2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				EC0DB18424E362A400BD00A2 /* Addresses.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		EC0DB18024E3625F00BD00A2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EC0DB18224E3629700BD00A2 /* AddressClass.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EC0DB18124E3626E00BD00A2 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				ECFBA14C24D4DD77002019CF /* AppDelegate.swift */,
+				ECFBA14E24D4DD77002019CF /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		ECFBA14024D4DD77002019CF = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +96,12 @@
 		ECFBA14B24D4DD77002019CF /* Uber */ = {
 			isa = PBXGroup;
 			children = (
-				ECFBA14C24D4DD77002019CF /* AppDelegate.swift */,
-				ECFBA14E24D4DD77002019CF /* SceneDelegate.swift */,
-				ECFBA15024D4DD77002019CF /* ViewController.swift */,
-				ECFBA15224D4DD77002019CF /* Main.storyboard */,
+				EC0DB18124E3626E00BD00A2 /* Delegates */,
+				EC0DB18024E3625F00BD00A2 /* Classes */,
+				EC0DB17F24E3625400BD00A2 /* Entities */,
+				EC0DB17E24E3624900BD00A2 /* Controllers */,
 				ECFBA15524D4DD79002019CF /* Assets.xcassets */,
+				ECFBA15224D4DD77002019CF /* Main.storyboard */,
 				ECFBA15724D4DD79002019CF /* LaunchScreen.storyboard */,
 				ECFBA15A24D4DD79002019CF /* Info.plist */,
 			);
@@ -138,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECFBA15124D4DD77002019CF /* ViewController.swift in Sources */,
+				EC0DB18524E362A400BD00A2 /* Addresses.swift in Sources */,
+				ECE03F0B24E36D6B00C9595D /* AddressesViewController.swift in Sources */,
+				ECFBA15124D4DD77002019CF /* MapViewController.swift in Sources */,
+				EC0DB18324E3629700BD00A2 /* AddressClass.swift in Sources */,
 				ECFBA14D24D4DD77002019CF /* AppDelegate.swift in Sources */,
 				ECFBA14F24D4DD77002019CF /* SceneDelegate.swift in Sources */,
 			);
