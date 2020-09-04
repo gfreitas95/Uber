@@ -92,9 +92,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     @IBAction func showFavorites() {
         
-        let addressVC = storyboard?.instantiateViewController(identifier: "AddressesView") as! AddressesViewController
-        
-        self.present(addressVC, animated: true, completion: nil)
+        if #available(iOS 13.0, *) {
+            let addressVC = storyboard?.instantiateViewController(identifier: "AddressesView") as! AddressesViewController
+            self.present(addressVC, animated: true, completion: nil)
+        } else {
+            let storyboard = UIStoryboard(name: "AddressesView", bundle: nil)
+            let storyboardVC = storyboard.instantiateViewController(withIdentifier: "AddressesView")
+            self.present(storyboardVC, animated: true)
+        }
     }
     
     @objc func keyboardWillShow(_ notification: Notification) {
